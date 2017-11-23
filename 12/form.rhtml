@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head> <title> Book Information </title>
+  </head>
+  <body>
+    <h2> Book Information
+    </h2>
+    <hr/>
+    <form action = "res"  method = "post">
+      <table>
+        <tr>
+          <td> Accession Number: </td>  
+          <td> <input type = "text"  name = "accession_number"  size = "30" />
+          </td>
+        </tr>
+        <tr>
+          <td> Title: </td>
+          <td> <input type = "text"  name = "title"  size = "30" />
+          </td>
+        </tr>
+        <tr>
+          <td> Author:</td>
+          <td> <input type = "text"  name = "author"  size = "30" />
+          </td>
+        </tr>
+        <tr>
+          <td> Edition:</td>
+          <td> <input type = "text"  name = "edition"  size = "30" />
+          </td>
+        </tr>
+        <tr>
+          <td> Publisher:</td>
+          <td> <input type = "text"  name = "publisher"  size = "30" />
+          </td>
+        </tr>
+      </table>
+    <p />
+
+
+    
+<!-- The submit and reset buttons -->
+
+      <p>
+        <input type = "submit"  value = "Submit Order" />
+        <input type = "reset"  value = "Clear Order Form" />
+      </p>
+    </form>
+    <hr/>
+    <form action="result"  method="post">
+        <input type="submit" value = "View Database"/>
+    </form>
+    <hr/>
+    <h3>Search</h3>
+     <form action = "search" method="post">
+        Enter the title:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="s" size="20"/>
+        <input type="submit" value="Search"/>
+    </form>
+  </body>
+</html>
