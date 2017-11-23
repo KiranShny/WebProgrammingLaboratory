@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+use CGI ':standard';
+print "Content-type: text/html \n\n";
+print "<body bgcolor=lightblue>";
+print "<h3 align='center'>SERVER INFORMATION</h3>";
+print "<table border='5px' align='center' style='background-color:pink'>";
+print "<tr><td>SERVER NAME</td>";
+print "<td>$ENV{'SERVER_NAME'}</td>";
+print"<br/>";
+print"<br/>";
+print"<br/>";
+print "<tr><td>SERVER PORT</td>";
+print "<td>$ENV{'SERVER_PORT'}</td>";
+print "<tr><td>SERVER SOFTWARE</td>";
+print "<td>$ENV{'SERVER_SOFTWARE'}</td>";
+print "<tr><td>SERVER PROTOCAL</td>";
+print "<td>$ENV{'SERVER_PROTOCOL'}</td>";
+print "<tr><td>CGI VERSION</td>";
+print "<td>$ENV{'GATEWAY_INTERFACE'}</td>";
+print "</tr>";
+print "</table>";
+print "<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>";
+print "<div style='background-color:yellow;'><b><p align='center'>copyright@ </p></div>";
