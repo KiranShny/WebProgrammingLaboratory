@@ -1,0 +1,31 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+function fibo()
+{
+var fn=0;
+var sn=1;
+var tn;
+var n=prompt("Enter the fibonacci limits");
+document.write("Fibonacci from 1 to "+n );
+document.write("<br>1");
+for(var i=0;i<n;i++)
+{
+tn=fn+sn;
+fn=sn;
+sn=tn;
+document.write("<br> "+tn);
+}
+}
+</script>
+<body>
+<title>lab 1a</title>
+</head>
+<body bgcolor="blue">
+<h1 align="center" style="color:red; font-size:50px;">Fibonacci series</h1>
+<input align="center" type="button"  value="click here for fibonacci" name="hai" style="background:#661122;width:600px;margin-left:400;margin-top:100;font-size:50px;" onClick="fibo();"/>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div style="background-color:yellow;"><b><p align="center">copyright @</p></div>
+</body>
+</html>
