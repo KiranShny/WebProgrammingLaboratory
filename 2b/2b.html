@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+function usncheck()
+{
+var semfor=/^[1-8]$/;
+var format=/[1-4][A-Za-z][A-Za-z][0-1][0-9][a-zA-Z][a-zA-Z][0-9][0-9][0-9]/;
+var usn=document.getElementById("id11").value;
+var sem=document.getElementById("id12").value;
+if(usn=="")
+{
+if(sem=="")
+alert("Please enter the USN and SEMESTER");
+else
+alert("ENter the USN");
+}
+else if(sem=="")
+{
+if(usn="")
+alert("Please enter the USN and SEMESTER");
+else
+alert("Enter the SEMESTER");
+}
+else 
+{
+alert("usn and Semester is "+usn+" "+sem);
+   if(usn.match(format))
+  {
+     alert("Valid usn ");
+     if(sem.match(semfor))
+      {
+      alert("VAlid Semester");
+       }
+     else
+       {
+       alert("Invalid Semester");
+       }
+    }
+  else
+  {
+  alert("Invalid usn");
+if(sem.match(semfor))
+      {
+      alert("VAlid Semester");
+       }
+     else
+       {
+       alert("Invalid Semester");
+       }
+  }
+}
+}
+</script>
+<title>LAB 2A USN</title>
+</head>
+<body bgcolor="f9062a">
+<div  style="background-color:#06F9D5;height:60px;width:1350px;">
+ <b> 
+<h1> <p align="center" style="color:yellow;">Usn checker</p></h1>
+ </b>
+</div>
+<br>
+<table border="50px" align="center">
+<tr><td>
+<input type="text" name="usn" id="id11" placeholder="Enter the USN"  /> 
+<br><br><br>
+<input type="text"  name="sem" id="id12" placeholder="Enter the SEMESTER"  /> 
+<br><br><br>
+<p align="right"><input type="submit" name="enter" value="CHECK" onclick="usncheck();" /></p>
+</td></tr></table>
+
+<br> 
+<div  style="background-color:lightgreen;height:20px;width:1350px;">
+<b> 
+ <p align="center" style="color:blue;">@</p>
+ </b>
+</div>
+</html>
