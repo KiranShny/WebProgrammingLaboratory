@@ -10,7 +10,7 @@ $qstr="INSERT INTO info VALUES('$n1','$a1','$a2','$e1')";
 mysqli_query($con,$qstr); 
 echo "<script type='text/javascript'>";
 echo "alert('INSERTED SUCCESSFULLY');";
-echo "window.location.href='lab11b.php'";
+echo "window.location.href='11add.php'";
 echo "</script>";
 }
 ?>
@@ -22,7 +22,7 @@ echo "</script>";
 </head>
 <body bgcolor=black>
 <div style="background-color:red;"><b><p align="center">DIGITAL ADDRESS BOOK</p></div>
-<p><a href="lab11a.php"><img src="index.jpg" alt=" " width="70" height="70"></a></p>
+<p><a href="11home.php"><img src="index.jpg" alt=" " width="70" height="70"></a></p>
 <form name="a1" action="" method="POST">
 <table align="center"bgcolor=white><tr><td><h3>Enter the Details<h3></td></tr>
 <tr><td>Name:</td><td><input type="text" name="sname" value="" required/></td></tr>
