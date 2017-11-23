@@ -4,17 +4,17 @@
 <S1>
 <d1>First student</d1>
 <name>Nikhil</name>
-<usn>4cb14cs058</usn>
-<college>Canara engineering college</college>
+<usn>1aa11ab111</usn>
+<college>engineering college</college>
 <branch>Computer science and engineering</branch>
 <year>2014</year>
-<email>njs.shetty415@gmail.com</email>
+<email>shetty@gmail.com</email>
 </S1>
 <S2>
 <d1>Second student</d1>
 <name>Kiran S</name>
-<usn>4cb14cs043</usn>
-<college>Canara engineering college</college>
+<usn>1aa11ab112</usn>
+<college>engineering college</college>
 <branch>Computer science and engineering</branch>
 <year>2014</year>
 <email>kiranshenoy@gmail.com</email>
@@ -22,11 +22,11 @@
 <S3>
 <d1>Third student</d1>
 <name>Kiran Raj</name>
-<usn>4cb14cs044</usn>
-<college>Canara engineering college</college>
+<usn>1aa11ab113</usn>
+<college>engineering college</college>
 <branch>Computer science and engineering</branch>
 <year>2014</year>
-<email>rajkiran@hotmail.com</email>
+<email>raj@hotmail.com</email>
 </S3>
 <divd>Copyright@me</divd>
 </Student>
