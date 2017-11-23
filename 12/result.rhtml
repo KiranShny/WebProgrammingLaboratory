@@ -1,0 +1,36 @@
+!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Database </title>
+  <head>
+  <body>
+<table border = "border">
+      <caption> Book Information </caption>
+      <tr>
+        <th> Accession Number </th>
+        <th> Title</th>
+        <th> Author </th>
+        <th> Edition </th>
+        <th> Publisher </th>
+      </tr>
+  <% @allbooks.each do |b|
+            @ano = b.ano
+            @title = b.title
+            @author = b.author
+            @edition = b.edition
+            @publisher = b.publisher %>
+                <tr align = "center">
+               <td> <%=@ano %></td>
+               <td> <%=@title %></td>
+               <td> <%= @author %> </td>
+               <td> <%= @edition %> </td>
+               <td> <%= @publisher %> <td>
+            </tr>
+      <% end %>
+    </table>
+    <%= link_to 'Back', {:action => 'form'} %>
+    <p /><p />
+  </body>
+</html>
